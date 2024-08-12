@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37129564-5c18-4990-8de4-cb6fe4144638" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BotDzozef.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Panel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/PanelSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/ClearQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/NowPlaying.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Play.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Skip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/SlashCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Stop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/AudioForwarder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/GuildMusicManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/PlayerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/TrackScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/startBot.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2VtF242MXsE0LoTVMyav67cvhgO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/JAVA PROJEKTY/BotDiscord",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15332031",
+    "project.structure.side.proportion": "0.4457275"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA PROJEKTY\BotJozef\Graphics" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA PROJEKTY\BotJozef\src\main\java\mehow2k\botjozef\UI" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mehow2k.botjozef.commands" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Frame">
+    <configuration name="Frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mehow2k.botdiscord.UI.Frame" />
+      <module name="BotDiscord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mehow2k.botdiscord.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="mehow2k.botjozef.main" />
+      <module name="BotDiscord" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="startBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mehow2k.botdiscord.startBot" />
+      <module name="BotDiscord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mehow2k.botdiscord.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Frame" />
+        <item itemvalue="Application.startBot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37129564-5c18-4990-8de4-cb6fe4144638" name="Changes" comment="" />
+      <created>1695647260004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695647260004</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.sedmelluq.discord.lavaplayer.tools.FriendlyException" package="com.sedmelluq.discord.lavaplayer.tools" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
