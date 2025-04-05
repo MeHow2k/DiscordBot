@@ -9,6 +9,7 @@ import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+
 public class NowPlaying extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
@@ -19,7 +20,7 @@ public class NowPlaying extends ListenerAdapter {
             GuildVoiceState memberVoiceState = member.getVoiceState();
 
             if (!memberVoiceState.inAudioChannel()) {
-                event.reply("You need to be in a voice channel").queue();
+                event.reply("You need to be on the same voice channel!").queue();
                 return;
             }
 
@@ -27,23 +28,23 @@ public class NowPlaying extends ListenerAdapter {
             GuildVoiceState selfVoiceState = self.getVoiceState();
 
             if (!selfVoiceState.inAudioChannel()) {
-                event.reply("Nie jestem na kanale głosowym!").queue();
+                event.reply("Im not on the voice channel!").queue();
                 return;
             }
 
             if (selfVoiceState.getChannel() != memberVoiceState.getChannel()) {
-                event.reply("Nie jesteś na tym samym kanale co ja!").queue();
+                event.reply("You need to be on the same voice channel!").queue();
                 return;
             }
 
             GuildMusicManager guildMusicManager = PlayerManager.get().getGuildMusicManager(event.getGuild());
             if (guildMusicManager.getTrackScheduler().getAudioPlayer().getPlayingTrack() == null) {
-                event.reply("Nie gram niczego").queue();
+                event.reply("Currently not playing anything").queue();
                 return;
             }
             AudioTrackInfo info = guildMusicManager.getTrackScheduler().getAudioPlayer().getPlayingTrack().getInfo();
             EmbedBuilder embedBuilder = new EmbedBuilder();
-            embedBuilder.setTitle("Aktualnie gram:");
+            embedBuilder.setTitle("Currently playing:");
             embedBuilder.setDescription("**Name:** `" + info.title + "`");
             embedBuilder.appendDescription("\n**Author:** `" + info.author + "`");
             embedBuilder.appendDescription("\n**URL:** `" + info.uri + "`");

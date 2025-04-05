@@ -1,10 +1,11 @@
 Discord Bot
 Executable JARs are in jars directory. 
-In order to start bot properly, you need to write API keys in config.txt, then start.
+In order to start bot properly (besides creating app in discord dev platform), you need to write API keys in config.txt (console version), then start.
 
 Most important features:
-- can play sound (from video or playlist) from YouTube via slash command
-- can manage queue, skip songs, reply with info about source of song
-- can reply to your prompt with ChatGPT response via slash command
-- bot have jars of 2 versions: without UI and with Swing UI
+- can play sound (from video or playlist) from SoundCloud
+- can manage queue, skip songs, shuffle playlist, reply with info about source of song
+- can reply to your prompt with ChatGPT response
+- can reply with weather info about requested city
+- bot have jars of 2 versions: console and with Swing UI
   

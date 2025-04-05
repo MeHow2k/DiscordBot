@@ -7,6 +7,7 @@ import com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
+import dev.lavalink.youtube.YoutubeAudioSourceManager;
 import net.dv8tion.jda.api.entities.Guild;
 
 import java.util.HashMap;
@@ -17,12 +18,16 @@ public class PlayerManager {
     private Map<Long,GuildMusicManager> guildMusicManagers = new HashMap<>();
     private AudioPlayerManager audioPlayerManager= new DefaultAudioPlayerManager();
     private PlayerManager(){
-        AudioSourceManagers.registerRemoteSources(audioPlayerManager);
+        YoutubeAudioSourceManager ytSourceManager = new dev.lavalink.youtube.YoutubeAudioSourceManager();
+        audioPlayerManager.registerSourceManager(ytSourceManager);
+        AudioSourceManagers.registerRemoteSources(audioPlayerManager,com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.class);
         AudioSourceManagers.registerLocalSource(audioPlayerManager);
+
     }
-    public static  PlayerManager get(){
+    public static  PlayerManager get() {
         if(INSTANCE==null){
-            INSTANCE= new PlayerManager();
+            try{
+            INSTANCE= new PlayerManager();}catch (Exception e){e.printStackTrace();}
         }
         return INSTANCE;
     }
@@ -41,7 +46,7 @@ public class PlayerManager {
             @Override
             public void trackLoaded(AudioTrack track) {
                 guildMusicManager.getTrackScheduler().queue(track);
-                System.out.println("track loaded");
+                System.out.println("TRACK \""+ track.getInfo().title+"\" LOADED.");
             }
 
             @Override
@@ -49,12 +54,12 @@ public class PlayerManager {
                 for (AudioTrack track : playlist.getTracks()) {
                     guildMusicManager.getTrackScheduler().queue(track);
                 }
-                System.out.println("playlist loaded");
+                System.out.println("PLAYLIST: \""+ playlist.getName() +"\" LOADED.");
             }
 
             @Override
             public void noMatches() {
-                System.out.println("noMaches");
+                System.out.println("noMaches for "+ trackURL);
             }
 
             @Override

@@ -19,7 +19,7 @@ public class Stop extends ListenerAdapter {
             GuildVoiceState memberVoiceState = member.getVoiceState();
 
             if(!memberVoiceState.inAudioChannel()) {
-                event.reply("Musisz być na tym samym kanale co ja!").queue();
+                event.reply("You need to be on the same voice channel!").queue();
                 return;
             }
 
@@ -27,12 +27,12 @@ public class Stop extends ListenerAdapter {
             GuildVoiceState selfVoiceState = self.getVoiceState();
 
             if(!selfVoiceState.inAudioChannel()) {
-                event.reply("Nie jestem na kanale głosowym.").queue();
+                event.reply("Im not on the voice channel.").queue();
                 return;
             }
 
             if(selfVoiceState.getChannel() != memberVoiceState.getChannel()) {
-                event.reply("Nie jesteś na tym samym kanale co ja!").queue();
+                event.reply("You need to be on the same voice channel!").queue();
                 return;
             }
 
@@ -42,7 +42,7 @@ public class Stop extends ListenerAdapter {
             trackScheduler.getAudioPlayer().stopTrack();
 
             if (guildMusicManager.getTrackScheduler().getAudioPlayer().getPlayingTrack() == null) {
-                event.reply("Nie gram aktualnie niczego.").queue();
+                event.reply("Currently not playing anything.").queue();
                 return;
             }
             AudioTrackInfo info = guildMusicManager.getTrackScheduler().getAudioPlayer().getPlayingTrack().getInfo();

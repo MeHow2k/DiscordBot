@@ -1,10 +1,10 @@
 package mehow2k.botdiscord.UI;
 
 import mehow2k.botdiscord.C;
-import mehow2k.botdiscord.Listeners;
-import mehow2k.botdiscord.commands.*;
+import mehow2k.botdiscord.listeners.EventListenersLoader;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -48,7 +48,6 @@ public class Panel extends JPanel implements ActionListener {
         add(buttonStart);
         add(buttonStop);
         add(buttonSettings);
-        //add(textArea);
         add(label);
         add(jScrollPane);
     }
@@ -68,14 +67,8 @@ public class Panel extends JPanel implements ActionListener {
         jda = jdaBuilder.build();
 
         //dodanie nasluchiwania wydarzeń discorda
-        jda.addEventListener(new Listeners());
-        jda.addEventListener(new SlashCommands());
-        jda.addEventListener(new Play());
-        jda.addEventListener(new Skip());
-        jda.addEventListener(new Stop());
-        jda.addEventListener(new Queue());
-        jda.addEventListener(new ClearQueue());
-        jda.addEventListener(new NowPlaying());
+        EventListenersLoader ell= new EventListenersLoader(jda);
+        ell.load();
 
         buttonStart.setEnabled(false);
         buttonStop.setEnabled(true);
@@ -98,6 +91,8 @@ public class Panel extends JPanel implements ActionListener {
     public void openSettingsWindow(){
         JFrame settings = new JFrame("Settings");
         settings.setSize(350, 500);
+        Image icon = new ImageIcon(getClass().getResource("/images/icon.png")).getImage();
+        settings.setIconImage(icon);
         settings.setVisible(true);
         settings.setLocation((Toolkit.getDefaultToolkit().getScreenSize().width - getSize().width+400) / 2,
                 (Toolkit.getDefaultToolkit().getScreenSize().height - getSize().height) / 2);

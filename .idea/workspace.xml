@@ -4,32 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37129564-5c18-4990-8de4-cb6fe4144638" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BotDzozef.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Panel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/PanelSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/ClearQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/NowPlaying.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Play.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Skip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/SlashCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Stop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/AudioForwarder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/GuildMusicManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/PlayerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/TrackScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/startBot.java" afterDir="false" />
+    <list default="true" id="37129564-5c18-4990-8de4-cb6fe4144638" name="Changes" comment="adeed jars, fixed frame icon, added showversion command">
+      <change afterPath="$PROJECT_DIR$/jars/BotDiscord-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jars/BotDiscordUI-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/WeatherForecast/WeatherData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/WeatherForecast/WeatherFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/WeatherForecast/weatherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Love.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Mult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/ShowVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Shuffle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/listeners/EventListenersLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/listeners/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BotDiscord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/BotDiscord-1.0.0UI.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/BotDiscord-1.0.0noUI.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/config.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/Listeners.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/UI/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/ClearQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/ClearQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/NowPlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/NowPlaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Skip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Skip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/SlashCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/GPT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/commands/Stop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/lavaplayer/PlayerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/startBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mehow2k/botdiscord/startBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,22 +74,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/JAVA PROJEKTY/BotDiscord",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15332031",
-    "project.structure.side.proportion": "0.4457275"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA PROJEKTY/BotDiscord&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4457275&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JAVA PROJEKTY\BotJozef\Graphics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\studia wazne\ProjektyProgr\JAVA PROJEKTY\BotJozef\src\main\resources\images" />
+      <recent name="G:\studia wazne\ProjektyProgr\JAVA PROJEKTY\BotJozef\src\main\resources" />
+      <recent name="G:\studia wazne\ProjektyProgr\JAVA PROJEKTY\BotJozef\src\main" />
+      <recent name="G:\studia wazne\ProjektyProgr\JAVA PROJEKTY\BotJozef\Graphics" />
       <recent name="D:\JAVA PROJEKTY\BotJozef\src\main\java\mehow2k\botjozef\UI" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -88,6 +102,8 @@
   </component>
   <component name="RunManager" selected="Application.Frame">
     <configuration name="Frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="mehow2k.botdiscord.UI.Frame" />
       <module name="BotDiscord" />
       <extension name="coverage">
@@ -102,17 +118,17 @@
     </configuration>
     <configuration name="run main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mehow2k.botjozef.main" />
-      <module name="BotDiscord" />
+      <module name="BotJozef" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="startBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mehow2k.botdiscord.startBot" />
-      <module name="BotDiscord" />
+      <module name="BotJozef" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mehow2k.botdiscord.*" />
+          <option name="PATTERN" value="mehow2k.botdiscord.listeners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,7 +152,58 @@
       <option name="presentableId" value="Default" />
       <updated>1695647260004</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update JDA to 5.2.1">
+      <created>1731608550431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731608550431</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update JDA to 5.2.1">
+      <created>1731708679878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731708679878</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added weather api">
+      <created>1731860507850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731860507850</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Splited commands, changed icon">
+      <created>1743872862454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743872862454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed commented out code">
+      <created>1743873045183</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743873045183</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adeed jars, fixed frame icon, added showversion command">
+      <created>1743880349730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743880349730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update JDA to 5.2.1" />
+    <MESSAGE value="Added weather api" />
+    <MESSAGE value="Splited commands, changed icon" />
+    <MESSAGE value="removed commented out code" />
+    <MESSAGE value="adeed jars, fixed frame icon, added showversion command" />
+    <option name="LAST_COMMIT_MESSAGE" value="adeed jars, fixed frame icon, added showversion command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,9 +12,9 @@ import java.util.Scanner;
 public class Frame extends JFrame {
 
     public Frame(){
-        super("Bot Discord by MeHow2k "+C.version);
-        //Image icon = new ImageIcon(getClass().getClassLoader().getResource("icon.png")).getImage();
-        //setIconImage(icon);
+        super("Bot Discord "+C.version);
+        Image icon = new ImageIcon(getClass().getResource("/images/icon.png")).getImage();
+        setIconImage(icon);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(600,700);
         setLocation((Toolkit.getDefaultToolkit().getScreenSize().width - getSize().width) / 2,
@@ -29,6 +29,7 @@ public class Frame extends JFrame {
             File config = new File("config.txt");
             String absolutePath = config.getAbsolutePath();
             Scanner scanner = new Scanner(new FileInputStream(absolutePath),"UTF-8");
+
             // sprawdzanie czy linia tekstu istnieje
             while(scanner.hasNextLine()){
                 //kazda linia pliku odpowiada za inne ustawienie
@@ -43,14 +44,6 @@ public class Frame extends JFrame {
                 }
                 //chat gpt api key
                 C.ChatGPTapikey=(scanner.nextLine());
-                if (C.TOKEN.equals("") || C.GuildID.equals("")){
-                    if(C.isUI) Panel.printLog("Cant load config.txt. Check that you provided all tokens."); else
-                    throw new RuntimeException("Can load config.txt. Check that you provided all tokens. ");
-                }
-                if (C.ChatGPTapikey.equals("")) {
-                    if(C.isUI) Panel.printLog("GPT API Key not defined. Check config.txt.");
-                    System.out.println("GPT API Key not defined. Check config.txt");
-                }
             }
 
         } catch (FileNotFoundException e) {
@@ -60,8 +53,8 @@ public class Frame extends JFrame {
     }
     public static void main(String[] args) {
         new Frame();
-        System.out.println("Bot Discord by MeHow2k "+C.version);
-        Panel.printLog("Bot Discord by MeHow2k "+C.version);
+        System.out.println("Bot Discord "+C.version);
+        Panel.printLog("Bot Discord "+C.version);
         System.out.println("Executed with GUI");
         Panel.printLog("Executed with GUI");
         C.isUI=true;

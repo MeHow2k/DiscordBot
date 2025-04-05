@@ -1,34 +1,26 @@
 package mehow2k.botdiscord;
 
-import mehow2k.botdiscord.commands.*;
+import mehow2k.botdiscord.listeners.EventListenersLoader;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class startBot {
     public static void main(String[] args) {
-        System.out.println("Bot Dzozef "+C.version );
+        System.out.println("Bot Discord "+C.version );
         System.out.println("Executed without GUI");
         loadConfig();
         //utworzenie obiektu JDA z tablica przywilejow
         JDABuilder jdaBuilder=JDABuilder.create(C.TOKEN, Arrays.asList(C.gatewayIntents));
-//        JDABuilder jdaBuilder=JDABuilder.createDefault(TOKEN);
         JDA jda = jdaBuilder.build();
 
-        //dodanie nasluchiwania wydarzeń discorda
-        jda.addEventListener(new Listeners());
-        jda.addEventListener(new SlashCommands());
-        jda.addEventListener(new Play());
-        jda.addEventListener(new Skip());
-        jda.addEventListener(new Stop());
-        jda.addEventListener(new Queue());
-        jda.addEventListener(new ClearQueue());
-        jda.addEventListener(new NowPlaying());
+//dodanie nasluchiwania wydarzeń discorda
+        EventListenersLoader ell= new EventListenersLoader(jda);
+        ell.load();
+
     }
     public static void loadConfig(){
         //wczytanie ustawień z pliku ustawień
@@ -49,13 +41,22 @@ public class startBot {
                 }
                 //chat gpt api key
                 C.ChatGPTapikey=(scanner.nextLine());
-                if (C.TOKEN.equals("") || C.GuildID.equals(""))
-                    throw new RuntimeException("Cant load config.txt. Check that you provided all tokens. ");
-                if (C.ChatGPTapikey.equals("")) System.out.println("GPT API Key not defined. Check config.txt");
             }
 
         } catch (FileNotFoundException e) {
-            System.out.println("Can't find file. Try to create new.");
+            System.out.println("Can't find config file. Creating...");
+            try {
+                //otwarcie pliku ustawień
+                File config = new File("config.txt");
+                FileWriter out = new FileWriter(config);
+                //wpisanie aktualnych ustawień do pliku ustawień
+                out.write("Write your Discord Token here" + "\n" + "Write your server ID here"+"\n"+"Write your ChatGPTAPI key here");
+                out.close();
+            } catch (IOException ee) {
+                System.out.println("Can't create config.txt file: "+ee.toString());
+            }
+            System.out.println("Config file created, write your Discord Token and Server ID.");
+            System.exit(0);
         }
     }
 }

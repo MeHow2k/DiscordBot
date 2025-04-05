@@ -17,7 +17,7 @@ public class Play extends ListenerAdapter {
             GuildVoiceState memberVoiceState = member.getVoiceState();
 
             if(!memberVoiceState.inAudioChannel()){
-                event.reply("Musisz być na tym samym kanale co ja!").queue();
+                event.reply("You need to be on the same voice channel!").queue();
                 return;
             }
             Member self= event.getGuild().getSelfMember();
@@ -28,22 +28,14 @@ public class Play extends ListenerAdapter {
 
             } else {
                 if(selfVoiceState.getChannel() != memberVoiceState.getChannel()){
-                    event.reply("Musisz być na tym samym kanale co ja!").queue();
+                    event.reply("You need to be on the same voice channel!").queue();
                     return;
                 }
             }
 
             PlayerManager playerManager=PlayerManager.get();
             event.reply("Playing").queue();
-
-//            GuildMusicManager guildMusicManager = PlayerManager.get().getGuildMusicManager(event.getGuild());
-//            AudioTrackInfo info = guildMusicManager.getTrackScheduler().getAudioPlayer().getPlayingTrack().getInfo();
-//            EmbedBuilder embedBuilder = new EmbedBuilder();
-//            embedBuilder.setTitle("Gram aktualnie:");
-//            embedBuilder.setDescription("**Name:** `" + info.title + "`");
-//            embedBuilder.appendDescription("\n**Author:** `" + info.author + "`");
-//            embedBuilder.appendDescription("\n**URL:** `" + info.uri + "`");
-//            event.replyEmbeds(embedBuilder.build()).queue();
+            //can create embed here
 
             playerManager.play(event.getGuild(),event.getOption("url").getAsString());
 

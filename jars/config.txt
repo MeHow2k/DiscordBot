@@ -1,3 +1,0 @@
-<Discord Token>
-<Guild ID>
-<ChatGPT API KEY>
